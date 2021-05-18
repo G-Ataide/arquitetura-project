@@ -1,0 +1,8 @@
+version: '3.3'
+
+services:
+    projectaero:
+        build: .
+        container_name: project-aero
+        ports: 
+            - '5000:8080'
