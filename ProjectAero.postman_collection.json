@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "dbd535e5-3cc1-4114-affc-62ef88d745ad",
+		"name": "ProjectAero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "0 - Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Gabriel2\",\r\n    \"password\": \"TesT123\",\r\n    \"email\": \"email@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/airtravel/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"airtravel",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1 - Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"g@gmail.com\",\r\n    \"password\": \"Test123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/airtravel/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2 - Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/airtravel/logout/df41d7d82f2bf1c176a6b41e21b51d1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"logout",
+						"df41d7d82f2bf1c176a6b41e21b51d1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3 - Valid Session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/airtravel/valid-session/df41d7d82f2bf1c176a6b41e21b51d1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"valid-session",
+						"df41d7d82f2bf1c176a6b41e21b51d1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4 - AirTravel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/airtravel/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 - AirTravel By Orig",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/airtravel/orig/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"orig",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - AirTravel By Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/airtravel/date/2021-05-15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"date",
+						"2021-05-15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - AirTravel By Amount Passengers  Ordened Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/airtravel/amount-passenger/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"amount-passenger",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8 - Buy Ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"d98712fed8d4214a08a006580cbd3895\",\r\n    \"seat\": \"B4155\",\r\n    \"airtravelId\": \"1\",\r\n    \"passengerName\": \"Gabriel Cardoso\",\r\n    \"passengerDocument\": \"12589987\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/airtravel/buy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"airtravel",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
