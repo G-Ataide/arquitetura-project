@@ -1,15 +1,12 @@
 package academy.devdojo.springboot2.service;
 
 import academy.devdojo.springboot2.domain.AirTravel;
-import academy.devdojo.springboot2.domain.Airport;
 import academy.devdojo.springboot2.domain.Ticket;
-import academy.devdojo.springboot2.repository.AirportRepository;
 import academy.devdojo.springboot2.repository.TicketRepository;
 import academy.devdojo.springboot2.request.TicketRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service

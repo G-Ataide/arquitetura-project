@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("airtravel")
+@RequestMapping("user")
 @Log4j2
 @RequiredArgsConstructor
 public class UserController {
